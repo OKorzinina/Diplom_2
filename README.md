@@ -1,10 +1,10 @@
 # Диплом #
 ## Задание 2: Автотесты для API сервиса Stellar Burgers (https://stellarburgers.education-services.ru) ##
-### Структура проекта ###
+### Структура проекта и файлы ###
 
 * tests
 * methods
-*.gitignore
+* .gitignore
 * README.md
 * conftest.py
 * data.py

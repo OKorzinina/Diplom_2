@@ -8,3 +8,19 @@
 - `test_data.py` - Тестовые данные
 - `api_urls.py` - URL endpoints
 - `user_generator.py` - Генератор тестовых пользователей
+
+## Запуск тестов
+
+* Установить зависимости:
+pip install -r requirements.txt
+
+* Запустить тесты:
+pytest tests/ --alluredir=allure-results
+
+* Создать отчет Allure:
+allure serve allure-results
+
+### Тестовые сценарии
+* регистрация пользователя
+* авторизация пользователя
+* создание заказов

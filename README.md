@@ -9,7 +9,7 @@
 - `api_urls.py` - URL endpoints
 - `user_generator.py` - Генератор тестовых пользователей
 
-## Запуск тестов
+### Запуск тестов
 
 * Установить зависимости:
 pip install -r requirements.txt

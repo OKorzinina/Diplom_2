@@ -14,7 +14,7 @@ class OrderAPIClient:
         
         Args:
             ingredient_ids: список ID ингредиентов
-            auth_token: токен авторизации (опционально)
+            auth_token: токен авторизации 
         """
         request_headers = {}
         

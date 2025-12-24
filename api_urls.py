@@ -1,8 +1,8 @@
 class APIEndpoints:
     """Конфигурация эндпоинтов API Stellar Burgers"""
     
-    BASE_DOMAIN = "https://stellarburgers.education-services.ru"
-    BASE_URL = f"https://{BASE_DOMAIN}"
+    # Полный базовый URL с протоколом
+    BASE_URL = "https://stellarburgers.education-services.ru"
     
     # Аутентификация
     SIGNUP_ENDPOINT = f"{BASE_URL}/api/auth/register"

@@ -19,7 +19,7 @@ class OrderAPIClient:
         request_headers = {}
         
         if auth_token:
-            # Нормализуем токен (убираем 'Bearer ' если есть)
+            
             normalized_token = auth_token.replace("Bearer ", "")
             request_headers["Authorization"] = f"Bearer {normalized_token}"
         

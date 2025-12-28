@@ -56,7 +56,7 @@ class TestOrderProcessing:
             response = OrderAPIClient.place_new_order(invalid_ingredients, auth_token)
 
         with allure.step("Проверить ошибку сервера"):
-           
+            # Сервер может вернуть 500 или другую ошибку
             assert response.status_code == TestConstants.SERVER_ERROR_CODE
 
     @allure.title("Создание заказа без авторизации")
@@ -68,8 +68,9 @@ class TestOrderProcessing:
             response = OrderAPIClient.place_new_order(ingredients)
 
         with allure.step("Проверить код ответа и тело ошибки"):
-            
+            # Ожидаем ошибку авторизации, как того требует документация
             assert response.status_code == TestConstants.UNAUTHORIZED_CODE
-            # Проверяем сообщение об ошибке (без всяких условий)
+            # Проверяем сообщение об ошибке
             assert response.json() == ResponseMessages.AUTH_REQUIRED
+
 
